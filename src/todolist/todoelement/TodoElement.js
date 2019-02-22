@@ -2,11 +2,10 @@ import React from 'react';
 import './TodoElement.css';
 
 const todoElement = (props) => (
-        <div align={"left"} key={props.key} className={(props.completed ? "CheckedElement" : "Element")}>
+        <li value={props.key} key={props.key} className={(props.completed ? "CheckedElement" : "Element")} Name="todoelement">
             <input type="checkbox" checked={props.completed} onChange={props.checkBoxChanged}/>
-            <b>{props.title}</b>
+            {props.title}
             {props.completed ? <button onClick={props.deleteButtonClicked}>delete</button> : null}
-            <div></div>
-        </div>
+        </li>
 );
 export default todoElement;

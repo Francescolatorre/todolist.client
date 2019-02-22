@@ -122,9 +122,7 @@ class TodoList extends Component{
                 console.log("state.todos true");
                 if (this.state.todos.length > 0)
                 {
-                    let todostop10 = this.state.todos.slice(0, 10);
-                    console.log(todostop10);
-                    innertodos = todostop10.map(elem => {
+                    innertodos = this.state.todos.map(elem => {
                        if (elem.state) {
                            elem.completed = (elem.state === "done");
                        }
@@ -162,7 +160,9 @@ class TodoList extends Component{
                 </div>
                 <hr/>
                 <div align={"center"}>
+                    <ul>
                     {innertodos}
+                    </ul>
                 </div>
             </div>
             );
