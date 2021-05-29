@@ -5,7 +5,7 @@ import TodoList from "./todolist/TodoList";
 
 class App extends Component {
 
-    serverUrl = "https://jsonplaceholder.typicode.com/todos/";
+    //serverUrl = "https://jsonplaceholder.typicode.com/todos/";
 
   componentDidMount = () => {
       console.log("enter App:componentDidMount");

@@ -3,7 +3,8 @@ import TodoElement from './todoelement/TodoElement';
 import Axios from 'axios';
 
 //const serverUrl = "https://jsonplaceholder.typicode.com/todos/";
-const serverUrl = "http://localhost:8080/todos/";
+//const serverUrl = "http://localhost:8080/todos/";
+const serverUrl = "https://fltavademo.azurewebsites.net"
 
 
 class TodoList extends Component{
